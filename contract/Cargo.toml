@@ -1,0 +1,14 @@
+[workspace]
+members = ["contracts/contract"]
+
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+
+[workspace.dependencies]
+soroban-sdk = "20.3.0"
+
+[profile.release]
+overflow-checks = true
